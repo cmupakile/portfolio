@@ -1,224 +1,151 @@
-/* Style for the general layout*/
-body{
-  background: powderblue;
-  font-family: 'Lucida Sans Unicode', 'Arial', Lucida, Arial, serif;
-  color: white;
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 100px;
 }
 
-h1, h3, h4, header .btn{
-  font-weight: 700;
-}
-
-h1{
-  margin: 100px 0 20px
-  text-transform: uppercase;
-  font-size: 2.6rem;
-}
-
-h3{
-  margin-bottom: 25px;
-  font-size: 2.3rem;
-  text-align: left;
-}
-
-h4{
-  font-size: 2rem;
-}
-
-h3:after{
-  content: '';
-  display: block;
-  width: 10%;
-  padding-top: 5px;
-  border-bottom: 3px solid whitesmoke;
-}
-
-h1 + h4{
-  font-weight: normal;
-}
-
-a{
-  text-align: center;
-  outline: none;
-  display: inline-block;
-  text-decoration: none;
-  background: #fcca2f;
-  font-size: 14px;
-  color: steelblue;
-  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
-  -webkit-transition: all ease .3s;
-  transition:  all ease .3s;
-}
-
-.btn{
-  font-size: 1.2rem;
-  border-radius: 5px;
-  padding: 12px 30px;
-}
-
-.block{
-  width: 130px;
-  margin: 5px;
-  display: block;
-}
-
-/*Header section styles*/
-
-header .btn{
-  text-transform: uppercase;
-}
-
-header a:hover, .about a:hover{
-  background: #4a386f;
-}
-
-header .btn, .services{
-  margin-top: 100px;
-}
-
-header {
-  padding: 80px 0 150px
-}
-
-.about, .contact{
-  padding: 150px 0;
-}
-
-header{
-  background: url(../Nearwallpaper.png) no-repeat fixed center / cover;
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
   text-align: center;
 }
-
-nav ul, .contact ul{
-  list-style: none;
-  font-size: 0;
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
 }
 
-nav li, .contact li{
-  margin-bottom: 0;
-  display: inline-block;
-}
-
-nav li{
-  width: 50%;
-}
-
-nav a{
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.phones {
   position: relative;
-  width: 100%;
-  height: 30px;
-  padding: 7px 0;
-  line-height: 30px;
 }
-
-nav li:nth-child(2n+1) a:after{
-  position: absolute;
-  content: "";
-  top: 19.5px;
-  right: -2.5px;
-  z-index: 10;
-  border-radius: 100%;
-  background: steelblue;
-  width: 5px;
-  height: 5px;
-}
-
-/*services section*/
-
-.section a{
-  padding: 25px;
-  background: #fafafa;
-  margin-top: 20px;
-  border-radius: 4px;
-}
-
-.services a:hover{
-  color: black;
-}
-
-.services span{
-  font-size:  5.5em;
-  color: #f4ba04;
-}
-
-.services a:hover{
-  color: white;
-}
-
-.services p{
-  margin: 15px 0 0;
-}
-
-/*about styles*/
-.about{
-  background: url(../kuroko_tetsuya__kuroko_no_basuke__minimalism_by_greenmapple17-d8prfo4.png) no-repeat fixed center / cover;
-  color: black;
-}
-
-.about .one-third,
-.about .two-thirds{
-  background: white;
-  background: rgba(255, 255, 255, 0.3);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.about .one-third{
-  margin-top:20px;
-}
-
-.about ul{
-  margin-bottom: 18px;
-}
-
-.about h3:after, .contact h3:after{
-  border-color: black;
-}
-
-.about .bottom{
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.about .one-third a{
-  margin: 10px auto;
-  width: 50%;
-  display: block;
-}
-
-.about .two-thirds p:last-child{
-  margin-bottom: 0;
-}
-
-/*contact styles*/
-
-.contact p {
-  margin: 70px 0 0;
-}
-
-.contact ul a{
-  margin-top: 50px;
-  box-shadow: none;
-  background: none;
-  margin-left: 30px;
-}
-
-.contact li:nth-child(1) a {
-  margin-left: 0;
-}
-
-.contact .btn-blue{
+.phone {
   position: relative;
-  margin-top: 30px;
-  color: white;
-  background: steelblue;
-  box-shadow: 0 8px #3b6d97
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.phone + .phone {
+  display: none;
 }
 
-.contact .btn-blue:after{
-  position: absolute;
-  content: '';
-  top: 5px;
-  right: 30px;
-  font-size: 1.6em;
+/* Values
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.values {
+  background-image: url('../Mello wallpaper.png');
+  background-size: cover;
+  color: #fff;
+  padding-bottom: 5rem;
+}
+.my-information {
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.value-heading {
+  margin-bottom: .3rem;
+}
+.value-description {
+  opacity: .8;
+  font-weight: 300;
+}
+
+/* Help
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.hobbies-interests {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: url('../Nearwallpaper.png');
+  background-size: cover;
+  color: #fff;
+}
+.categories .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero {
+    height: 190px;
+  }
+  .hero-heading {
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 20rem 0 19rem;
+  }
+  .hero {
+    padding: 22rem 0;
+  }
+  .hero-heading {
+    font-size: 3.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
 }
